@@ -1,15 +1,9 @@
 function fish_prompt
-    echo -sn (prompt_pwd)
+  set -l time (set_color yellow)(date "+(%H:%M:%S)")
+  set -l dir (set_color white)"["(prompt_pwd)"]"
+  set -l git (set_color green)(git rev-parse --abbrev-ref HEAD 2>/dev/null; or echo "")
+  set -l cursor (set_color red)"❯"(set_color yellow)"❯"(set_color green)"❯ "
 
-    if set -l branch_name (git_branch_name)
-        set -l branch_status
-
-        if git_is_dirty
-            set branch_status "*"
-        else
-            set branch_status "+"
-        end
-
-        echo -sn (set_color -o) " ($branch_name$branch_status) " (set_color normal)
-    end
+  echo $dir $time $git
+  echo $cursor
 end
