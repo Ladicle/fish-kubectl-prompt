@@ -4,7 +4,8 @@
 
 Display information about the kubectl current context and namespace in fish prompt.
 
-![fish-kubectl-prompt]
+![normal-prompt](https://user-images.githubusercontent.com/1159133/33415205-5f428d52-d5d8-11e7-9ecb-e78fa8c784e0.png)
+![error-prompt](https://user-images.githubusercontent.com/1159133/33415236-908ee694-d5d8-11e7-9eb0-307cd512ae4b.png)
 
 ## Install
 
@@ -17,4 +18,3 @@ fisher Ladicle/fish-kubectl-prompt
 [slack-link]: https://fisherman-wharf.herokuapp.com
 [slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
 [fisherman]: https://github.com/fisherman/fisherman
-[fish-kubectl-prompt]: https://cloud.githubusercontent.com/assets/8317250/13661599/777665a2-e6d7-11e5-9078-eae115fa140a.png
