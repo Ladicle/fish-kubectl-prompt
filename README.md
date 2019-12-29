@@ -19,7 +19,7 @@ set KUBECTL_PROMPT_SEPARATOR "/"
 With [fisherman]
 
 ```
-fisher Ladicle/fish-kubectl-prompt
+fisher add Ladicle/fish-kubectl-prompt
 ```
 
 [slack-link]: https://fisherman-wharf.herokuapp.com
